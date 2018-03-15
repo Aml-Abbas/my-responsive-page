@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/dark.png');
+    color: white;
+    font-family: 'News Cycle', sans-serif;
+    margin: 0 auto;
+
+}
+.image {
+    width: 100%;
+    background-image: url('images/image1.jpg');
+    height: 40em;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Shadows Into Light', cursive;
+color: black;
+}
+
+.navigation {
+    position: fixed;
+    background-image: url('images/dark.png');
+    background-image: transparent;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    width: 100%;
+    padding: 10px;
+}
+
+.navigation > .links .link {
+    display: inline;
+}
+.navigation > .links .link :hover{
+    background-color:white;
+    color:black;
+}
+
+.navigation > .links .link a {
+
+    color: #FFF;
+    text-decoration: none;
+    margin-left: 15px;
+    float:right;
+    font-size: 18px;
+}
+
+.navleft {
+    float: lefT;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+    text-shadow: 2px 2px gray;
+    padding-top: 35px; 
+}
+h1{
+    text-shadow: 2px 2px white;
+}
+h2 {
+    text-align: center;
+}
+.img-4 {
+    height: 300px;
+    width: 400px;
+    border-radius: 30px;
+    outline: 1px solid white;
+    outline-offset: 5px;
+}
+.img-3 {
+    height: 400px;
+    width: 300;
+    border-radius: 30px;
+    outline: 1px solid black;
+    outline-offset: 5px;
+}
+.row {
+    background-image: url('images/light.png'); 
+    color: black; 
+  
+}
+.col-12 {
+    width: 100%;
+
+}
+.col-6 {
+    width: 50%;
+
+}
+.col-6, .col-12 {
+    float: left;
+
+}
+
+.row, .row-1 {
+    
+    height: 650px;
+    padding: 60px;
+
+}
+.row ::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+.row-1 ::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+footer {
+    padding: 20px;
+    background-image: url('images/light.png');
+}
+footer b {
+    float: right;
+    color: black;
+}
+footer p {
+
+    color: black;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+}
+#contactme a {
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+@media screen and (max-width: 640px) {
+
+    .col-6, .col-12 {
+        width: 100%;
+    }
+#myeducation, #aboutme, #mywork{
+    height: 800px;
+}
+#myinterest{
+    height: 1000px;
+} 
+.image {
+    height: 60em;
+}
+footer {
+    padding-right:40px;
+}
+.img-4 {
+    width: 300px;
+    height: 200px;
+
+}
+.navigation > .links .link a {
+    width: 15%;
+    margin-left: 0%;
+    font-size: 12px;
+
+}
+}
